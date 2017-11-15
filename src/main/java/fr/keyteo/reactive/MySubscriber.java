@@ -4,7 +4,7 @@ import java.util.concurrent.Flow;
 public class MySubscriber<T> implements Flow.Subscriber<T> {
 
     private String name;
-    public MySubscriber(String nameSubscriptor){
+    MySubscriber(String nameSubscriptor){
         this.name = nameSubscriptor;
     }
 
