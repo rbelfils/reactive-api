@@ -1,6 +1,8 @@
 package lambda;
 
 
+import java.util.function.Consumer;
+
 public class Start2 {
 
 
@@ -14,5 +16,15 @@ public class Start2 {
                 }
         );
         System.out.println(res.getFirstName() + " " + res.getLastName());
+
+
+
+        NameSyso parserLambda = new NameSyso();
+        parserLambda.parse("Eric Clapton", (s1, s2) -> {
+                    System.out.println("Fait ce que tu veux !! "+s1);
+                    System.out.println("Fait ce que tu veux !! "+s2);
+                }
+        );
+
     }
 }
